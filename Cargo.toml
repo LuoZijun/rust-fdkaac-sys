@@ -1,8 +1,12 @@
 [package]
 name = "fdkaac-sys"
 version = "0.1.6"
+description = "FDK-AAC bindings"
+readme = "README.rst"
+license = "MIT"
 authors = ["luozijun <luozijun.assistant@gmail.com>"]
 keywords = [ "aac", "fdk-aac", "bindings" ]
+repository = "https://github.com/Luozijun/rust-fdkaac-sys.git"
 edition = "2018"
 links = "fdk-aac"
 build = "build.rs"
