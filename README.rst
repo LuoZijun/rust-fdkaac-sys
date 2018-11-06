@@ -34,6 +34,14 @@ Rust FDK AAC bindings
     cargo build
 
 
+测试(Test)
+-------------
+
+.. code:: bash
+    
+    cargo test --release
+
+
 用例
 -------------
 

@@ -2,6 +2,7 @@
 name = "fdkaac-sys"
 version = "0.1.6"
 authors = ["luozijun <luozijun.assistant@gmail.com>"]
+keywords = [ "aac", "fdk-aac", "bindings" ]
 edition = "2018"
 links = "fdk-aac"
 build = "build.rs"
