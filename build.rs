@@ -15,7 +15,7 @@ fn main() {
     let fdkaac_source_dir = path::Path::new(&current_dir).join("fdk-aac");
     
     // bash ./autogen.sh
-    // bash ./configure
+    // bash ./configure --enable-static=yes
     // make
     // ./libtool --mode=install install -c libfdk-aac.la ./lib/
     if fdkaac_source_dir.join("include").exists() == false {
@@ -66,6 +66,7 @@ fn main() {
             .expect("failed to execute `./autogen.sh` process");
         process::Command::new("bash")
             .arg("configure")
+            .arg("--enable-static=yes")
             .current_dir(&fdkaac_source_dir)
             .status()
             .expect("failed to execute `./configure` process");
